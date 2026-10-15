@@ -1532,7 +1532,7 @@ class DeepWikiPlugin(BasePlugin):
         chunks = self._split_text_chunks(cleaned, self._PLAIN_MSG_MAX_CHARS)
         for i, chunk in enumerate(chunks):
             body = chunk if len(chunks) == 1 else f"[{i + 1}/{len(chunks)}]\n{chunk}"
-            await self.ctx.message_processor.send_message_chain(
+            await self.ctx.send_message_chain(
                 session=sid,
                 chain=MessageChain([Text(body)]),
             )

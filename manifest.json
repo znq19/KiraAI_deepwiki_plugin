@@ -1,8 +1,16 @@
 {
   "display_name": "DeepWiki 助手",
   "plugin_id": "deepwiki_plugin",
-  "version": "2.4.1",
+  "version": "2.4.2",
   "author": "znq19",
   "description": "通过 DeepWiki MCP 查询 GitHub 仓库文档。支持多路搜索、/dw 命令（含@唤醒）、候选选择、失败自动重置、预设仓库重置保留、合并转发与可配置引导文案。v2.4.1：MCP 瞬时故障（429/5xx/网络抖动）自动退避重试，失败判定加固，错误回答不再被缓存。",
-  "repo": "https://github.com/znq19/KiraAI_deepwiki_plugin"
+  "repo": "https://github.com/znq19/KiraAI_deepwiki_plugin",
+  "icon": "icon.png",
+  "tags": [
+    "deepwiki",
+    "docs",
+    "github",
+    "mcp",
+    "search"
+  ]
 }

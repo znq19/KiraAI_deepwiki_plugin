@@ -162,6 +162,10 @@ Repository not found. Visit https://deepwiki.com to index it.
 <details>
 <summary><strong>📝 更新日志</strong></summary>
 
+### 2.4.2
+
+- 兼容 KiraAI 3.0 GA 弃用面：`ctx.message_processor.send_message_chain` → `ctx.send_message_chain`（两代等价）。零行为变化。
+
 ### 2.4.0
 
 - 新增「LLM 调用默认绑定预设仓库」开关（默认关）：开启后，用户自然语言提问（或 Bot 主动调用 DeepWiki 工具）时默认使用当前会话/用户绑定的仓库，无需先 `search_deepwiki`——通过 `@on.llm_request` 在系统提示注入默认仓库；`ask_deepwiki` 的 repo 参数非法时用绑定仓库兜底，成功调用后记为当前绑定；`/dw clear` 后同样回落到预设仓库
